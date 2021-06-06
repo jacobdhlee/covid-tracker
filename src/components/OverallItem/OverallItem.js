@@ -13,7 +13,7 @@ const OverallItem = ({data, category}) => {
           data && (
             <>
               <GraphContainer>
-                <LineChart width={300} height={100} data={data}>
+                <LineChart width={300} height={40} data={data}>
                   <Line type="monotone" dataKey="value" stroke="#8884d8" dot={false}/>
                 </LineChart>
               </GraphContainer>

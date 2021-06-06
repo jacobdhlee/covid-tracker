@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Table } from './CountryTable.styles';
+import { Container, Table, ButtonContainer, Button } from './CountryTable.styles';
 
 const CountryTable = ({data}) => {
     const [index, changeIndex] = useState(0);
@@ -48,10 +48,10 @@ const CountryTable = ({data}) => {
                     })}
                 </tbody>
             </Table>
-            <div>
-                <button onClick={() => updateIndex('decrease')} disabled={index === 0}>back</button>
-                <button onClick={() => updateIndex('increase')} disabled={index + 10 > data.length}>next</button>
-            </div>
+            <ButtonContainer>
+                <Button onClick={() => updateIndex('decrease')} disabled={index === 0}>back</Button>
+                <Button onClick={() => updateIndex('increase')} disabled={index + 10 > data.length}>next</Button>
+            </ButtonContainer>
         </Container>
     )
 }

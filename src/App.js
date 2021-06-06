@@ -4,6 +4,7 @@ import useFetch from './hooks/useFetch';
 
 import OverallItem from './components/OverallItem/OverallItem';
 import CountryTable from './components/CountryTable/CountryTable';
+import Map from './components/Map/Map';
 
 import { Container, OverallContainer, MapContainer } from './App.styles';
 
@@ -54,12 +55,8 @@ function App() {
         <OverallItem data={overallFormatted['deaths']} category={'Deaths'}/>
         <OverallItem data={overallFormatted['recovered']} category={'Recovered'}/>
       </OverallContainer>
-      <MapContainer>
-        Map goes here
-      </MapContainer>
-      <div>
-        <CountryTable data={contryData}/>
-      </div>
+      <Map data={contryData}/>
+      <CountryTable data={contryData}/>
     </Container>
   );
 }

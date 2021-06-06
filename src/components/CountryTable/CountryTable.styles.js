@@ -37,3 +37,20 @@ export const Table = styled.table`
         }
     }
 `
+
+export const ButtonContainer = styled.div`
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+`;
+
+export const Button = styled.button`
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`;
