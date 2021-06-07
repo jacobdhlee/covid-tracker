@@ -48,7 +48,9 @@ function App() {
     <Container>
       <div>
         <h1>COVID-19</h1>
-        <h3>Live total dashboard</h3>
+        <div>
+          <h3>Live total dashboard</h3>
+        </div>
       </div>
       <OverallContainer>
         <OverallItem data={overallFormatted['cases']} category={'Cases'}/>
